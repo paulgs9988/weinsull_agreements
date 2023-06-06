@@ -17,12 +17,12 @@ import { useWeb3React } from "@web3-react/core";
 import { ethers } from "ethers";
 import { injectedConnector } from "../web3";
 import { useNavigate } from "react-router-dom";
-import LinkTokenABI from "./LinkTokenABI.json";
-import PaymentEscrow from "./PaymentEscrow.json";
+import LinkTokenABI from "../LinkTokenABI.json";
+import PaymentEscrow from "../PaymentEscrow.json";
 
-// Replace these values with your contract's ABI and addresses
+// This points at the contract itself, it also is currently just set up to allow
+// Link tokens to be deposited
 const contractABI = PaymentEscrow.abi;
-
 const contractAddress = "0x3e2bB50B0F01aC9576948bAA786e1c864C3b5d22";
 const tokenAddress = "0x779877A7B0D9E8603169DdbD7836e478b4624789";
 

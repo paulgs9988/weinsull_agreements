@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { ethers } from "ethers";
 import { InjectedConnector } from "@web3-react/injected-connector";
-import PaymentEscrow from "./PaymentEscrow.json";
+import PaymentEscrow from "../PaymentEscrow.json";
 
 const injectedConnector = new InjectedConnector({
   supportedChainIds: [1, 3, 4, 5, 42, 11155111],
@@ -34,6 +34,7 @@ const FinancierInteraction = () => {
       return;
     }
 
+    //const contractAddress = "0xdfF1e4981C4ED44Da3814660dEC5D77174A790A3";
     const contractAddress = "0x3e2bB50B0F01aC9576948bAA786e1c864C3b5d22";
     const contract = new ethers.Contract(
       contractAddress,
@@ -73,7 +74,8 @@ const FinancierInteraction = () => {
       return;
     }
 
-    const contractAddress = "0xdfF1e4981C4ED44Da3814660dEC5D77174A790A3";
+    //const contractAddress = "0xdfF1e4981C4ED44Da3814660dEC5D77174A790A3";
+    const contractAddress = "0x3e2bB50B0F01aC9576948bAA786e1c864C3b5d22";
     const contract = new ethers.Contract(
       contractAddress,
       PaymentEscrow.abi,

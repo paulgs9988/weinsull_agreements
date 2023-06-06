@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { ethers } from "ethers";
-import PaymentEscrow from "/Users/paulsullivan/Weinsull/weinsull-agreements/src/PaymentEscrow.json";
+import PaymentEscrow from "../PaymentEscrow.json";
 import { InjectedConnector } from "@web3-react/injected-connector";
 import {
   Grid,
@@ -72,6 +72,7 @@ const ClientInteraction = () => {
     }
     setIsPaymentProcessing(true);
 
+    //const contractAddress = "0xdfF1e4981C4ED44Da3814660dEC5D77174A790A3";
     const contractAddress = "0x3e2bB50B0F01aC9576948bAA786e1c864C3b5d22";
     const contract = new ethers.Contract(
       contractAddress,
