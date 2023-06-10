@@ -25,13 +25,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/yourprojectname.git
+   git clone https://github.com/paulgs9988/weinsull_agreements.git
    ```
 
 ````
 2. Navigate to the project directory:
 ```sh
-cd yourprojectname
+cd weinsull_agreements
 ````
 
 3. Install the dependencies:
@@ -43,10 +43,10 @@ npm install
 4. Start the development severe:
 
 ```sh
-Npm start
+npm start
 ```
 
-Visit http://localhost:3000 in your browser to view the application.
+Visit http://localhost:3000 in your browser to view the application (or whatever locahost you used).
 
 ### Using the application
 
